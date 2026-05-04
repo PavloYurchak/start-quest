@@ -6,6 +6,8 @@ This is the first page in the documentation.
 
 - [Documentation Home](./index.md)
 - [Page Template](./page-template.md)
+- [Product Concept](./product-concept.md)
+- [Development Plan](./development-plan.md)
 
 ## Getting Started
 
