@@ -1,0 +1,13 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+.vs/
+bin/
+obj/
+
+*.jfm
+*.dbmdl
+
+/documentation/Backend/StartQuest/StartQuest.API/appsettings.json
+/documentation/Backend/StartQuest/StartQuest.Worker/appsettings.json
