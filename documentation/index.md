@@ -8,6 +8,7 @@ This is the first page in the documentation.
 - [Page Template](./page-template.md)
 - [Product Concept](./product-concept.md)
 - [Development Plan](./development-plan.md)
+- [Database Table Pattern](./database-table-pattern.md)
 
 ## Getting Started
 
