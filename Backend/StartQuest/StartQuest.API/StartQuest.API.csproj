@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="10.0.7" />
-    <PackageReference Include="Microsoft.OpenApi" Version="3.5.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.23.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="10.1.7" />
   </ItemGroup>
@@ -19,10 +18,6 @@
     <ProjectReference Include="..\StartQuest.Application\StartQuest.Application.csproj" />
     <ProjectReference Include="..\StartQuest.Domain\StartQuest.Domain.csproj" />
     <ProjectReference Include="..\StartQuest.Infrastructure\StartQuest.Infrastructure.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\" />
   </ItemGroup>
 
 </Project>
