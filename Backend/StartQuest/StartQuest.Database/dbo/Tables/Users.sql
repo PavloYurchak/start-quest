@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[Users]
 (
 	[Id] INT IDENTITY(1, 1) NOT NULL,
+    [PublicId] UNIQUEIDENTIFIER NOT NULL DEFAULT NEWID(),
 
     [Email]         NVARCHAR(256) NOT NULL,
     [UserName]      NVARCHAR(100) NOT NULL,
@@ -29,6 +30,10 @@
 
     CONSTRAINT [PK_Users] PRIMARY KEY CLUSTERED ([Id])
 );
+
+GO
+CREATE UNIQUE INDEX [IXU_Users_PublicId]
+ON [dbo].[Users] ([PublicId]);
 
 GO
 CREATE UNIQUE INDEX [IXU_Users_Email] 

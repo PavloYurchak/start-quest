@@ -60,6 +60,31 @@
     <Folder Include="dbo\Tables" />
   </ItemGroup>
   <ItemGroup>
+    <Build Include="dbo\Tables\BattlePasses.sql" />
+    <Build Include="dbo\Tables\BattlePassItems.sql" />
+    <Build Include="dbo\Tables\Crafts.sql" />
+    <Build Include="dbo\Tables\OccurrenceStatuses.sql" />
+    <Build Include="dbo\Tables\Projects.sql" />
+    <Build Include="dbo\Tables\ProjectStatuses.sql" />
+    <Build Include="dbo\Tables\RecurrenceTypes.sql" />
+    <Build Include="dbo\Tables\ScheduleTypes.sql" />
+    <Build Include="dbo\Tables\Skills.sql" />
+    <Build Include="dbo\Tables\Tags.sql" />
+    <Build Include="dbo\Tables\Tenants.sql" />
+    <Build Include="dbo\Tables\TenantMembers.sql" />
+    <Build Include="dbo\Tables\TenantRoles.sql" />
+    <Build Include="dbo\Tables\TenantTypes.sql" />
+    <Build Include="dbo\Tables\TimeSheetEntries.sql" />
+    <Build Include="dbo\Tables\UserRefreshTokens.sql" />
     <Build Include="dbo\Tables\Users.sql" />
+    <Build Include="dbo\Tables\WorkItemAssignments.sql" />
+    <Build Include="dbo\Tables\WorkItemCraftRewards.sql" />
+    <Build Include="dbo\Tables\WorkItemOccurrences.sql" />
+    <Build Include="dbo\Tables\WorkItemSchedules.sql" />
+    <Build Include="dbo\Tables\WorkItemSkillRewards.sql" />
+    <Build Include="dbo\Tables\WorkItems.sql" />
+    <Build Include="dbo\Tables\WorkItemStatuses.sql" />
+    <Build Include="dbo\Tables\WorkItemTags.sql" />
+    <Build Include="dbo\Tables\WorkItemTypes.sql" />
   </ItemGroup>
 </Project>

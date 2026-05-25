@@ -19,7 +19,107 @@
    "T4TemplatePath": null,
    "Tables": [
       {
+         "Name": "[dbo].[BattlePasses]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[BattlePassItems]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Crafts]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[OccurrenceStatuses]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Projects]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ProjectStatuses]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[RecurrenceTypes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[ScheduleTypes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Skills]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tags]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TenantMembers]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TenantRoles]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[Tenants]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TenantTypes]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[TimeSheetEntries]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[UserRefreshTokens]",
+         "ObjectType": 0
+      },
+      {
          "Name": "[dbo].[Users]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemAssignments]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemCraftRewards]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemOccurrences]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItems]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemSchedules]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemSkillRewards]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemStatuses]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemTags]",
+         "ObjectType": 0
+      },
+      {
+         "Name": "[dbo].[WorkItemTypes]",
          "ObjectType": 0
       }
    ],

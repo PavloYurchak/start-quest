@@ -9,6 +9,8 @@ public partial class User
 {
     public int Id { get; set; }
 
+    public Guid PublicId { get; set; }
+
     public string Email { get; set; } = null!;
 
     public string UserName { get; set; } = null!;
@@ -44,4 +46,26 @@ public partial class User
     public DateTime? DeletedAt { get; set; }
 
     public bool IsActive { get; set; }
+
+    public virtual ICollection<BattlePass> BattlePasses { get; set; } = new List<BattlePass>();
+
+    public virtual ICollection<Craft> Crafts { get; set; } = new List<Craft>();
+
+    public virtual ICollection<Project> Projects { get; set; } = new List<Project>();
+
+    public virtual ICollection<Skill> Skills { get; set; } = new List<Skill>();
+
+    public virtual ICollection<TenantMember> TenantMembers { get; set; } = new List<TenantMember>();
+
+    public virtual ICollection<Tenant> Tenants { get; set; } = new List<Tenant>();
+
+    public virtual ICollection<TimeSheetEntry> TimeSheetEntries { get; set; } = new List<TimeSheetEntry>();
+
+    public virtual ICollection<UserRefreshToken> UserRefreshTokens { get; set; } = new List<UserRefreshToken>();
+
+    public virtual ICollection<WorkItemAssignment> WorkItemAssignmentAssignedByUsers { get; set; } = new List<WorkItemAssignment>();
+
+    public virtual ICollection<WorkItemAssignment> WorkItemAssignmentUsers { get; set; } = new List<WorkItemAssignment>();
+
+    public virtual ICollection<WorkItem> WorkItems { get; set; } = new List<WorkItem>();
 }
