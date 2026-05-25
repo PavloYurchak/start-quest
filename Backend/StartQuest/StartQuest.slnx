@@ -1,0 +1,20 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="StartQuest.API/StartQuest.API.csproj" />
+    <Project Path="StartQuest.Worker/StartQuest.Worker.csproj" />
+  </Folder>
+  <Folder Name="/src/Core/">
+    <Project Path="StartQuest.Application/StartQuest.Application.csproj" />
+    <Project Path="StartQuest.Domain/StartQuest.Domain.csproj" />
+    <Project Path="StartQuest.Infrastructure/StartQuest.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/src/Database/">
+    <Project Path="StartQuest.Database/StartQuest.Database.sqlproj" Id="eec23320-4a66-4d4c-8b1c-9c3540cb1b7c">
+      <Build />
+      <Deploy />
+    </Project>
+  </Folder>
+  <Folder Name="/src/Tests/">
+    <Project Path="StartQuest.UnitTests/StartQuest.UnitTests.csproj" />
+  </Folder>
+</Solution>

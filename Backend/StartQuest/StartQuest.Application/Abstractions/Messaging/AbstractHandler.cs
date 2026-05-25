@@ -1,0 +1,36 @@
+﻿using FluentValidation;
+using Microsoft.Extensions.Logging;
+
+namespace StartQuest.Application.Abstractions.Messaging
+{
+    public abstract class AbstractHandler<TRequest, TResponse>(
+        IValidator<TRequest>? validator,
+        ILogger? logger) : IHandler<TRequest, TResponse>
+    where TRequest : IHandlerRequest<TResponse>
+    {
+        public async Task<HandlerResponse<TResponse>> Handle(TRequest request, CancellationToken cancellationToken)
+        {
+            if (validator is not null)
+            {
+                var result = await validator.ValidateAsync(request, cancellationToken);
+                if (!result.IsValid)
+                {
+                    var error = string.Join("; ", result.Errors.Select(e => e.ErrorMessage));
+                    return HandlerResponse<TResponse>.BadRequest(error);
+                }
+            }
+
+            try
+            {
+                return await HandleRequest(request, cancellationToken);
+            }
+            catch (Exception ex)
+            {
+                logger?.LogError(ex, "Handler {Handler} failed", GetType().Name);
+                return HandlerResponse<TResponse>.Fail($"Unexpected error {ex.Message} | {ex.StackTrace}");
+            }
+        }
+
+        protected abstract Task<HandlerResponse<TResponse>> HandleRequest(TRequest request, CancellationToken cancellationToken);
+    }
+}
